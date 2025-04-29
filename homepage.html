@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxiDrive - Homepage</title>
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <h1>Welcome to TaxiDrive</h1>
+        </header>
+        <main>
+            <!-- Welcome Section -->
+            <section id="welcome">
+                <h2>Welcome back, happy day, ride with Us!</h2>
+                <p>Your reliable ride partner is just a click away.</p>
+            </section>
+
+            <!-- Quick Book Ride Section -->
+            <section id="quick-book">
+                <h2>Quick Book a Ride</h2>
+                <form id="bookRideForm" action="php/book_ride.php" method="POST">
+                    <label for="pickup">Pickup Location:</label>
+                    <input type="text" id="pickup" name="pickup" required>
+                    <label for="dropoff">Dropoff Location:</label>
+                    <input type="text" id="dropoff" name="dropoff" required>
+                    <label for="rideType">Ride Type:</label>
+                    <select id="rideType" name="rideType">
+                        <option value="economy">Economy</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                    <button type="submit">Confirm Ride</button>
+                </form>
+                <p id="confirmationMessage" style="display: none; color: green; font-weight: bold;">Ride booked successfully!</p>
+            </section>
+
+            <!-- Ride History -->
+            <section id="ride-history">
+                <h2>Your Recent Rides</h2>
+                <ul>
+                    <li>Bamburi to Mombasa Town - ksh 1200 - 2025-04-07</li>
+                    <li>Mombasa to Nairobi - ksh 50000 - 2025-04-06</li>
+                    <li>Nyali to Mombasa Town - ksh 800 - 2025-04-05</li>
+
+                
+                    
+                </ul>
+                <a href="ride_history.html">View Full Ride History</a>
+            </section>
+
+            <!-- Log Out Section -->
+            <section id="logout">
+                <form action="php/logout.php" method="POST">
+                    <button type="submit">Log Out</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>TaxiDrive © 2025 | <a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="js/homepage.js"></script>
+</body>
+</html>

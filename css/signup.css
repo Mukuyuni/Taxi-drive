@@ -1,0 +1,83 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/taxis-24-horas.jpg'); 
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Makes the body a column container */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffeb3b; /* Gold text */
+}
+
+/* Main Content Styling */
+main {
+    flex: 1; /* Allows main content to take up available space */
+    padding: 2rem;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+section#signup {
+    background: rgba(255, 255, 255, 0.8); /* Light background */
+    color: black;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+section#signup label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+section#signup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+section#signup button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section#signup button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for footer */
+    color: white;
+    position: sticky; /* Ensures footer stays at the bottom */
+    bottom: 0;
+    width: 100%;
+}

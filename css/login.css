@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/aerial\ view\ of\ new\ york\,\ mannhattan.png'); /* Unique login background */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffeb3b; /* Gold for emphasis */
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#login {
+    background: rgba(80, 93, 148, 0.8);
+    color: black;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+section#login label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+section#login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+section#login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section#login button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
